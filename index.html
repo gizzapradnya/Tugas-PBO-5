@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Perikanan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Manajemen Data Ikan</h1>
+
+        <!-- Form Tambah Ikan -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Tambah Ikan</h4>
+                <form id="fishForm">
+                    <div class="mb-3">
+                        <label for="fishName" class="form-label">Nama Ikan</label>
+                        <input type="text" class="form-control" id="fishName" placeholder="Masukkan nama ikan" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fishType" class="form-label">Jenis Ikan</label>
+                        <input type="text" class="form-control" id="fishType" placeholder="Masukkan jenis ikan" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fishWeight" class="form-label">Berat Ikan (kg)</label>
+                        <input type="number" class="form-control" id="fishWeight" placeholder="Masukkan berat ikan" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Tambah Ikan</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Daftar Ikan -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Daftar Ikan</h4>
+                <ul id="fishList" class="list-group">
+                    <!-- Data ikan akan ditampilkan di sini -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tabel Ikan -->
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Daftar Ikan dalam Tabel</h4>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Ikan</th>
+                            <th>Jenis Ikan</th>
+                            <th>Berat (kg)</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="fishTableBody">
+                        <!-- Data ikan akan diisi di sini menggunakan JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

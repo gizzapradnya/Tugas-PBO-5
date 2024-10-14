@@ -1,0 +1,18 @@
+body {
+    background-color: #588dcd; /* Ganti dengan warna latar belakang yang Anda inginkan */
+    color: #343a40; /* Warna teks default */
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang putih dengan transparansi */
+}
+
+h1 {
+    color: #ffffff; /* Warna teks judul menjadi putih untuk kontras yang lebih baik */
+}
+
+.btn {
+    border-radius: 5px;
+}
